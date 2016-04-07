@@ -1,6 +1,6 @@
 {
   "name": "alaska-help",
-  "version": "0.1.0",
+  "version": "0.7.0",
   "description": "Alaska help service",
   "main": "lib/alaska-help.js",
   "scripts": {
@@ -24,7 +24,13 @@
   },
   "homepage": "https://github.com/maichong/alaska-help#readme",
   "peerDependencies": {
-    "alaska": "^0.7.0"
+    "alaska": "^0.7.3"
+  },
+  "dependencies": {
+    "alaska-field-relationship": "^0.7.0",
+    "alaska-field-text": "^0.6.0",
+    "alaska-field-html": "^0.7.0",
+    "alaska-field-datetime": "^0.6.0"
   },
   "devDependencies": {
     "babel-plugin-syntax-async-functions": "^6.5.0",

@@ -18,20 +18,11 @@ export default class Help extends service.Model {
     show: 1
   };
 
-  static groups = {
-    content: 'Content'
-  };
   static fields = {
     title: {
       label: 'Title',
       type: String,
-      default: ''
-    },
-    content: {
-      label: ' ',
-      type: 'html',
-      default: '',
-      group: 'content'
+      required: true
     },
     parent: {
       label: 'Parent Help',
@@ -50,12 +41,18 @@ export default class Help extends service.Model {
     },
     activated: {
       label: 'Activated',
-      //private: true,
+      private: true,
       type: Boolean
     },
     createdAt: {
       label: 'Created At',
       type: Date
+    },
+    content: {
+      label: 'Content',
+      type: 'html',
+      default: '',
+      group: 'content'
     }
   };
 
