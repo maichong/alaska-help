@@ -1,5 +1,7 @@
 /**
- * Created by lixiaoyu on 16-4-6.
+ * @copyright Maichong Software Ltd. 2016 http://maichong.it
+ * @date 2016-04-07
+ * @author Li Yudeng <li@maichong.it>
  */
 
 import Help from '../models/Help';
@@ -26,7 +28,6 @@ export default async function helps(ctx) {
     }
     for (let i = 0; i < result.length; i++) {
       if (result[i].parent) {
-        console.log(result[i].parent);
         result.splice(i, 1);
         i -= 1;
       }
