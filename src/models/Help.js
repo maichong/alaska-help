@@ -6,9 +6,9 @@
 
 export default class Help extends service.Model {
   static label = 'Help';
-  static defaultColumns = 'title,parent,sort,activated,createdAt';
+  static defaultColumns = 'title parent sort activated createdAt';
   static defaultSort = '-sort';
-  static searchFields = 'title,content';
+  static searchFields = 'title content';
   static defaultFilters = {
     activated: true
   };
