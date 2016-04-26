@@ -57,7 +57,7 @@ export default class Help extends service.Model {
   };
 
   preSave() {
-    if (this.createdAt) {
+    if (!this.createdAt) {
       this.createdAt = new Date;
     }
   }
