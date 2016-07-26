@@ -4,8 +4,11 @@
  * @author Li Yudeng <li@maichong.it>
  */
 
-export default class Help extends service.Model {
+import alaska from 'alaska';
+
+export default class Help extends alaska.Model {
   static label = 'Help';
+  static icon = 'info-circle';
   static defaultColumns = 'title parent sort activated createdAt';
   static defaultSort = '-sort';
   static searchFields = 'title content';
