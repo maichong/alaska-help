@@ -12,8 +12,12 @@ export default class Help extends alaska.Model {
   static defaultColumns = 'title parent sort activated createdAt';
   static defaultSort = '-sort';
   static searchFields = 'title content';
-  static defaultFilters = {
-    activated: true
+
+  static defaultFilters = ctx => {
+    if (ctx.service.id === 'alaska-admin') return null;
+    return {
+      activated: true
+    };
   };
 
   static api = {
